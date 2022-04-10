@@ -1,0 +1,149 @@
+#home {
+  overflow-x: hidden;
+}
+
+.jumbotron {
+  padding-top: 6rem;
+  background-color: #e2edff;
+}
+
+.second-body {
+  background: #ffffff;
+  /* background: rgb(175, 208, 255); */
+  /* background: linear-gradient(0deg, rgba(175, 208, 255, 1) 0%, rgba(237, 244, 255, 1) 70%, rgba(255, 255, 255, 1) 100%); */
+}
+
+section {
+  scroll-margin-top: 70px;
+}
+
+.nav-item a.active {
+  color: white;
+}
+
+/* Skills CSS */
+.my-skills .skills-container {
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  margin-bottom: 75px;
+}
+
+/* .my-skills .skills-container .grid-skills {
+  margin-bottom: 25px;
+} */
+
+.my-skills .skills-container .grid-skills .grid-skills-main {
+  position: relative;
+  min-width: 300px;
+  display: grid;
+  grid-template-columns: repeat(3, 150px);
+  /* grid-template-rows: repeat(2, 150px); */
+  grid-template-rows: 1fr auto;
+  grid-gap: 15px;
+}
+
+.my-skills .skills-container .grid-skills .grid-skills-another {
+  position: relative;
+  min-width: 300px;
+  display: grid;
+  grid-template-columns: repeat(3, 150px);
+  grid-template-rows: 1fr auto 1fr auto;
+  grid-gap: 15px;
+}
+
+.my-skills .skills-container .grid-skills .grid-items {
+  position: relative;
+  overflow: hidden;
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  transition: 0.5s ease;
+}
+
+.my-skills .skills-container .grid-skills .grid-items-label {
+  display: flex;
+  align-items: center;
+  justify-content: center;
+}
+
+.my-skills .skills-container .grid-skills .grid-items::before {
+  content: "";
+  background: hsla(0, 0%, 100%, 0.5);
+  width: 50%;
+  height: 100%;
+  left: -125%;
+  transform: skew(45deg);
+  position: absolute;
+  transition: all 0.7s cubic-bezier(0.17, 0.84, 0.44, 1);
+}
+
+.my-skills .skills-container .grid-skills .grid-items:hover::before {
+  left: 200%;
+}
+
+.my-skills .skills-container .grid-skills .grid-items:hover {
+  transform: scale(1.1);
+}
+
+.my-skills .skills-container .grid-skills .grid-items .img_skills {
+  width: 75%;
+  height: 75%;
+}
+/* End Skills CSS */
+
+/* Journey CSS */
+.my-journey {
+  max-width: 100%;
+  min-height: 100vh;
+  position: relative;
+}
+
+.my-journey .journey-container {
+  max-width: 100%;
+  min-height: 100%;
+  display: flex;
+  justify-content: center;
+}
+
+.my-journey .journey-container .journey-timeline {
+  width: 80%;
+  height: 100%;
+}
+
+.my-journey .journey-container .journey-timeline .journey-description {
+  min-height: 250px;
+  position: relative;
+  display: flex;
+  margin: auto;
+  justify-content: center;
+}
+
+.my-journey .journey-container .journey-timeline .journey-description .journey-text {
+  padding: 15px;
+  max-width: 350px;
+  min-height: 100px;
+  position: relative;
+  color: black;
+  border: 2px solid #0d6efd;
+  letter-spacing: 0.3px;
+  border-radius: 10px;
+}
+
+.my-journey .journey-container .journey-timeline .journey-description .journey-text .headline {
+  font-size: 1.5em;
+}
+
+.my-journey .journey-container .journey-timeline .journey-description .journey-text .sub-title {
+  font-weight: bold;
+}
+
+.bottom-arrow {
+  width: 0;
+  height: 0;
+  margin: 0 auto 3%;
+  border-top: 20px solid #0d6efd;
+  border-left: 20px solid transparent;
+  border-right: 20px solid transparent;
+}
+/* End Journey CSS */
