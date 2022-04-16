@@ -1,13 +1,3 @@
-$(document).ready(function () {
-  $(window).scroll(onScroll);
-
-  $(".nav-item a").on("click", function () {
-    $(".nav-item a").removeClass("active");
-    $(this).addClass("active");
-  });
-});
-
-// Use Your Class or ID For Selection
 function onScroll(event) {
   var scrollPos = $(document).scrollTop() + 150;
   $("#navbarNav a").each(function () {
@@ -21,3 +11,14 @@ function onScroll(event) {
     }
   });
 }
+
+// // smooth scroll
+// $("a.smooth-goto").click(function (event) {
+//   event.preventDefault();
+//   $("html, body").animate(
+//     {
+//       scrollTop: $($(this).attr("href")).offset().top,
+//     },
+//     500
+//   );
+// });
